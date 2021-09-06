@@ -1,0 +1,358 @@
+@import "Base/extends";
+@import "Base/mapas";
+@import "Base/mixin";
+@import "Base/variables";
+
+
+html {
+    height: 100%;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.seguinos-container{
+    background-color: $amarillo;
+    display: flex;
+    justify-content: flex-end;
+    padding: 2px;
+    margin: 2px;
+
+    .Menú-seguinos{
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        text-decoration-line: none;
+        display: flex;
+        align-items: center;
+        width: 15%;
+    }
+}
+
+nav {
+    font-size: 10pt;
+}
+
+.seguinos {
+    justify-content: left;
+    align-items: center;
+}
+
+.Logo-buscador {
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    color: $grisclaro;
+    display: flex;
+    justify-content: center;
+
+    img {
+        padding: 5px;
+        margin: 5px;
+    }
+}
+
+.Navbar-container {
+    z-index: 100;
+    color: white;
+    background-color: $amarillo;
+    color: white !important;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    font-size: 12pt;
+
+
+    .Nav {
+        display: flex;
+        justify-content: right;
+        padding: 15px;
+        background-color: $amarillo;
+        font-family: 'Roboto', sans-serif;
+        color: white;
+
+        li {
+            float: left;
+        }
+
+    }
+    .Nav li a, .submenú {
+        background-color: $amarillo;
+        color: white !important;
+        text-decoration: none;
+        padding: 10px 20px;
+        display: block;
+        font-size: 12pt;
+    }
+    
+    .hr-menú {
+        size: 2px;
+        color: white;
+    }
+    
+    .botón {
+        color: white;
+    }
+    
+    .Nav li a:hover {
+        background-color: $naranja;
+        color: white;
+    }
+    
+    .Nav li ul {
+        display: none;
+        position: absolute;
+        min-width: 140px;
+    }
+    
+    .Nav li:hover>ul {
+        display: block;
+    }
+    
+}
+
+.titulares-categorías {
+    @extend%titulares-categorías;
+}
+
+.Electrodomésticos {
+    @extend%secciones-index;
+    border-top: 5px solid $amarillo;
+    border-bottom: 25px solid $amarillo;
+}
+
+.recuadroe {
+    background-color: $amarillo;
+    @extend%recuadros-titulares;
+
+    a {
+        @extend%titulares-index;
+    }
+}
+
+.Muebles-y-deco {
+    @extend%secciones-index;
+    border-top: 5px solid $verde;
+    border-bottom: 25px solid $verde;
+}
+
+.recuadrom {
+    background-color: $verde;
+    @extend%recuadros-titulares;
+
+    a {
+        @extend%titulares-index;
+        
+    }
+}
+
+.Blanquería {
+    @extend%secciones-index;
+    border-top: 5px solid $naranja;
+    border-bottom: 25px solid $naranja;
+}
+
+.recuadrob {
+    background-color: $naranja;
+    @extend%recuadros-titulares;
+
+    a {
+        @extend%titulares-index;
+    }
+}
+
+.Productos-index-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+
+    .Productos-index {
+        display: block;
+        background-color: white;
+        box-shadow: -1px 0px 10px 2px rgba(77,77,77,1);
+        border-radius: 19px 19px 19px 19px;
+        padding: 20px;
+        margin: 25px;
+        text-align: center;
+        line-height: 1.4;
+        transition: all 0.5s;
+
+        &:hover, .btn:hover {
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05)
+
+        }
+    }  
+}
+
+.Título-producto {
+    color: black;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+.Breve-descripción {
+    color: $grisclaro;
+    font-style: italic;
+    font-size: 12pt;
+    line-height: 2pt;
+    display: inline;
+}
+
+.Precio {
+    color: $grisoscuro;
+    font-size: 18pt;
+    font-weight: bolder;
+}
+
+.Botón-comprar {
+    color: $verde;
+    font-size: 12pt;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid $verde; 
+    padding: 10px; 
+    background-color: $verde;
+    color: white; 
+    text-decoration: none; 
+    text-transform: uppercase; 
+    border-radius: 50px; 
+}
+
+.card {
+    border: none;
+    outline:none;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    background-color: #fff;
+    border-radius: 20px;
+    transition: tranform .3s;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: -1px 0px 10px 2px rgba(77,77,77,1);
+
+    &:hover {
+        transform: translateY(-15px);
+        transition: transform .3s;            
+    }
+
+    .titular-producto {
+        color: black;
+        font-size: 16pt;
+        font-weight: bold;
+    }
+    
+    .descripción {
+        color: $grisclaro;
+        font-style: italic;
+        font-size: 11pt;
+        line-height: 2pt;
+    }
+    
+    .precios {
+        color: $grisoscuro;
+        font-size: 18pt;
+        font-weight: bolder;
+    }
+    
+    hr {
+        width: 40%;
+        margin: 3% 30%;
+    }
+    
+}
+
+.main-electro {
+    background-color: $amarillo;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-muebles {
+    background-color: $verde;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-blanco {
+    background-color: $naranja;
+    font-family: 'Roboto', sans-serif;
+}
+
+.Modal-bold {
+    font-weight: bold;
+    color: $grisoscuro;
+}
+
+.modal-font {
+    font-family: 'Roboto', sans-serif;
+    color: $grisclaro ;
+}
+
+.Botón-modal {
+    font-size: 12pt;
+    text-decoration: none;
+    border: 1px solid $verde; 
+    padding: 10px; 
+    background-color: $verde;
+    color: white !important;
+    font-weight: bolder;
+    text-decoration: none; 
+    text-transform: uppercase; 
+    border-radius: 50px; 
+}
+
+.btn {
+    font-size: 11pt;
+    text-decoration: none;
+    border: 1px solid $verde; 
+    padding: 10px; 
+    background-color: $verde;
+    color: white;
+    text-decoration: none; 
+    text-transform: uppercase; 
+    border-radius: 50px; 
+}
+
+
+.botón-modal-verde {
+    background-color: $verde;
+    border: 1px solid $verde;
+}
+
+.botón-modal-gris {
+    background-color: $grisoscuro ;
+    border: 1px solid $grisoscuro;  
+}
+
+
+footer {
+    background-color: $amarillo;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-decoration-line: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px;
+
+}
+
+.footer-left {
+    display: flex;
+    justify-content: left;
+}
+
+.footer-right p {
+    display: flex;
+    align-items: center;
+
+}
+
+.footer-center {
+    font-size: 12pt;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}

@@ -1,0 +1,332 @@
+@charset "UTF-8";
+.Blanquería, .Muebles-y-deco, .Electrodomésticos {
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.recuadrob, .recuadrom, .recuadroe {
+  justify-content: initial;
+  padding-left: 30px;
+  margin-top: 0.5rem;
+}
+
+.recuadrob a, .recuadrom a, .recuadroe a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+  font-style: italic;
+}
+
+.titulares-categorías {
+  font-weight: bold;
+  font-size: 18pt;
+  text-align: center;
+  position: relative;
+}
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.seguinos-container {
+  background-color: #f6a13b;
+  display: flex;
+  justify-content: flex-end;
+  padding: 2px;
+  margin: 2px;
+}
+.seguinos-container .Menú-seguinos {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  text-decoration-line: none;
+  display: flex;
+  align-items: center;
+  width: 15%;
+}
+
+nav {
+  font-size: 10pt;
+}
+
+.seguinos {
+  justify-content: left;
+  align-items: center;
+}
+
+.Logo-buscador {
+  background-color: white;
+  font-family: "Roboto", sans-serif;
+  color: #666666;
+  display: flex;
+  justify-content: center;
+}
+.Logo-buscador img {
+  padding: 5px;
+  margin: 5px;
+}
+
+.Navbar-container {
+  z-index: 100;
+  color: white;
+  background-color: #f6a13b;
+  color: white !important;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+  font-size: 12pt;
+}
+.Navbar-container .Nav {
+  display: flex;
+  justify-content: right;
+  padding: 15px;
+  background-color: #f6a13b;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+.Navbar-container .Nav li {
+  float: left;
+}
+.Navbar-container .Nav li a, .Navbar-container .submenú {
+  background-color: #f6a13b;
+  color: white !important;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+  font-size: 12pt;
+}
+.Navbar-container .hr-menú {
+  size: 2px;
+  color: white;
+}
+.Navbar-container .botón {
+  color: white;
+}
+.Navbar-container .Nav li a:hover {
+  background-color: #ea554d;
+  color: white;
+}
+.Navbar-container .Nav li ul {
+  display: none;
+  position: absolute;
+  min-width: 140px;
+}
+.Navbar-container .Nav li:hover > ul {
+  display: block;
+}
+
+.Electrodomésticos {
+  border-top: 5px solid #f6a13b;
+  border-bottom: 25px solid #f6a13b;
+}
+
+.recuadroe {
+  background-color: #f6a13b;
+}
+.Muebles-y-deco {
+  border-top: 5px solid #2f8951;
+  border-bottom: 25px solid #2f8951;
+}
+
+.recuadrom {
+  background-color: #2f8951;
+}
+.Blanquería {
+  border-top: 5px solid #ea554d;
+  border-bottom: 25px solid #ea554d;
+}
+
+.recuadrob {
+  background-color: #ea554d;
+}
+.Productos-index-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+.Productos-index-container .Productos-index {
+  display: block;
+  background-color: white;
+  box-shadow: -1px 0px 10px 2px #4d4d4d;
+  border-radius: 19px 19px 19px 19px;
+  padding: 20px;
+  margin: 25px;
+  text-align: center;
+  line-height: 1.4;
+  transition: all 0.5s;
+}
+.Productos-index-container .Productos-index:hover, .Productos-index-container .Productos-index .btn:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.Título-producto {
+  color: black;
+  font-size: 12pt;
+  font-weight: bold;
+}
+
+.Breve-descripción {
+  color: #666666;
+  font-style: italic;
+  font-size: 12pt;
+  line-height: 2pt;
+  display: inline;
+}
+
+.Precio {
+  color: #333333;
+  font-size: 18pt;
+  font-weight: bolder;
+}
+
+.Botón-comprar {
+  color: #2f8951;
+  font-size: 12pt;
+  font-weight: bold;
+  text-decoration: none;
+  border: 1px solid #2f8951;
+  padding: 10px;
+  background-color: #2f8951;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 50px;
+}
+
+.card {
+  border: none;
+  outline: none;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  background-color: #fff;
+  border-radius: 20px;
+  transition: tranform 0.3s;
+  font-family: "Roboto", sans-serif;
+  box-shadow: -1px 0px 10px 2px #4d4d4d;
+}
+.card:hover {
+  transform: translateY(-15px);
+  transition: transform 0.3s;
+}
+.card .titular-producto {
+  color: black;
+  font-size: 16pt;
+  font-weight: bold;
+}
+.card .descripción {
+  color: #666666;
+  font-style: italic;
+  font-size: 11pt;
+  line-height: 2pt;
+}
+.card .precios {
+  color: #333333;
+  font-size: 18pt;
+  font-weight: bolder;
+}
+.card hr {
+  width: 40%;
+  margin: 3% 30%;
+}
+
+.main-electro {
+  background-color: #f6a13b;
+  font-family: "Roboto", sans-serif;
+}
+
+.main-muebles {
+  background-color: #2f8951;
+  font-family: "Roboto", sans-serif;
+}
+
+.main-blanco {
+  background-color: #ea554d;
+  font-family: "Roboto", sans-serif;
+}
+
+.Modal-bold {
+  font-weight: bold;
+  color: #333333;
+}
+
+.modal-font {
+  font-family: "Roboto", sans-serif;
+  color: #666666;
+}
+
+.Botón-modal {
+  font-size: 12pt;
+  text-decoration: none;
+  border: 1px solid #2f8951;
+  padding: 10px;
+  background-color: #2f8951;
+  color: white !important;
+  font-weight: bolder;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 50px;
+}
+
+.btn {
+  font-size: 11pt;
+  text-decoration: none;
+  border: 1px solid #2f8951;
+  padding: 10px;
+  background-color: #2f8951;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 50px;
+}
+
+.botón-modal-verde {
+  background-color: #2f8951;
+  border: 1px solid #2f8951;
+}
+
+.botón-modal-gris {
+  background-color: #333333;
+  border: 1px solid #333333;
+}
+
+footer {
+  background-color: #f6a13b;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  text-decoration-line: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 25px;
+}
+
+.footer-left {
+  display: flex;
+  justify-content: left;
+}
+
+.footer-right p {
+  display: flex;
+  align-items: center;
+}
+
+.footer-center {
+  font-size: 12pt;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-center a {
+  text-decoration: none;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
