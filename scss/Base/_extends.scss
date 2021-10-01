@@ -1,38 +1,15 @@
-%secciones-index {
-    font-family: 'Roboto', sans-serif;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 0.5rem;
-}
-
-%recuadros-titulares {
-    justify-content: initial;
-    padding-left: 30px;
-    margin-top: 0.5rem;
-}
-
-%titulares-index {
+%titulares {
     font-size: 2rem;
-    text-decoration: none;
     color: white;
     font-style: italic;
-}
-
-
-%titulares-categorías {
     font-weight: bold;
-    text-align: center;
-    position: relative;
-    
 }
 
-%descripciones {
-    color: var (--grisclaro);
+%vermas {
+    font-size: 1rem;
+    color: white;
     font-style: italic;
-    font-size: 12pt;
-    line-height: 2pt;
-    display: inline;
+    font-weight: normal;
+
 }
 
