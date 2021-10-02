@@ -251,6 +251,15 @@ footer .footer-center li {
   .titulares-index {
     font-size: 18pt;
   }
+
+  .img-desktop {
+    display: none;
+  }
+}
+@media only screen and (min-width: 472px) {
+  .img-mobile {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
 /*# sourceMappingURL=style.scss.map */
